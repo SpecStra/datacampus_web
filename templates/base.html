@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block header %}{% endblock %}
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="nav">
+        <h1>Hello, Sir.</h1>
+        <a href="/"><button>To Main</button></a>
+        <a href="/test"><button>To Test</button></a>
+        <a href="/data"><button>To Data</button></a>
+        <a href="/foli"><button>To Foli</button></a>
+    </div>
+    {% block content %}{% endblock %}
+    <hr>
+</body>
+</html>
