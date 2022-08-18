@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, session
-import requests
 import json
 import folium
 
@@ -46,7 +45,7 @@ def foli():
 def datas(source=None):
     # folium 객체에 쓸 변수 선언
     # seoul_corr = source["corr"]
-    buStation_corr = [37.489572382, 126.723325411]
+    buStation_corr = [37.48662382, 126.723325411]
     tile_option = "Stamen Toner"
     ex_popup = "<i>Bupyeong Station<br>Hello</i>"
     ex_tooltip = "Hello, Station!"
