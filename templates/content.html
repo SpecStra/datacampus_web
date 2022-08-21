@@ -1,12 +1,66 @@
 {% extends "base.html" %}
-{% block header %}
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="../static/mvp.css">
-{% endblock %}
 {% block content %}
-    <form method="post">
-        <input name="corr">
-        <button type="submit">Submit</button>
-    </form>
+
+    <div class="content">
+        <div class="content_top">
+            <!-- introduce, hr -->
+            <div class="content_top_quote">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </div>
+            <hr>
+        </div>
+        <div class="content_search">
+            <!-- search bar-form -->
+            <form class="content_search_form" method="post">
+                <input class="content_search_input" name="corr">
+                <!--
+                <button class="content_search_btn" type="submit"><i class="bx bx-search icon"></i></button>
+                -->
+            </form>
+        </div>
+        <div class="content_status">
+            <!-- maybe status? -->
+            <div class="content_status_container">
+                <div class="content_status_itemBox_1">
+                    Algal bloom Area
+                </div>
+                <div class="content_status_itemBox_2">
+                    xx.xx km²
+                </div>
+            </div>
+            <div class="content_status_container">
+                <div class="content_status_itemBox_1">
+                    Algal bloom Area
+                </div>
+                <div class="content_status_itemBox_2">
+                    xx.xx km²
+                </div>
+            </div>
+            <div class="content_status_container">
+                <div class="content_status_itemBox_1">
+                    Algal bloom Area
+                </div>
+                <div class="content_status_itemBox_2">
+                    xx.xx km²
+                </div>
+            </div>
+            <div class="content_status_container">
+                <div class="content_status_itemBox_1">
+                    Algal bloom Area
+                </div>
+                <div class="content_status_itemBox_2">
+                    xx.xx km²
+                </div>
+            </div>
+        </div>
+        <div class="content_img">
+            <div class="content_img_container">
+                <img src="../static/resource/test_img1.png">
+            </div>
+            <div class="content_img_container">
+                <img src="../static/resource/test_img2.png">
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

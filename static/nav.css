@@ -1,0 +1,36 @@
+
+
+.nav{
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+    top: 0;
+    border-bottom: 2px solid mintcream;
+    height: 70px;
+}
+
+.nav_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 0 0 20px;
+}
+
+.nav_container:nth-child(2){
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+}
+
+.nav_quote{
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.nav_icon{
+    font-size: 36px;
+    margin-left: 70px;
+}

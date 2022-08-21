@@ -14,7 +14,6 @@ def index():
 
         # send to session -> data -> inputName
         session["data"] = form_data
-        print(session)
 
         # after redirected, session still go on
         return redirect("./test")
@@ -32,7 +31,7 @@ def test():
     print(received_data, type(received_data))
 
     # use like as node.js
-    return render_template("test.html", data=received_data)
+    return render_template("test.html", data=received_data, map_id=session["map_id"])
 
 
 @app.route("/foli")
@@ -46,7 +45,7 @@ def datas(source=None):
     # folium 객체에 쓸 변수 선언
     # seoul_corr = source["corr"]
     buStation_corr = [37.48662382, 126.723325411]
-    tile_option = "Stamen Toner"
+    tile_option = "stamenterrain"
     ex_popup = "<i>Bupyeong Station<br>Hello</i>"
     ex_tooltip = "Hello, Station!"
 

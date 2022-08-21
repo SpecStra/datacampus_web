@@ -4,16 +4,20 @@
     {% block header %}{% endblock %}
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../static/base.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="nav">
-        <h1>Hello, Sir.</h1>
-        <a href="/"><button>To Main</button></a>
-        <a href="/test"><button>To Test</button></a>
-        <a href="/data"><button>To Data</button></a>
-        <a href="/foli"><button>To Foli</button></a>
+        <div class="nav_container">
+            <h1 class="nav_quote">Hello, Sir.</h1>
+        </div>
+        <div class="nav_container">
+            <a href="/"><div class="nav_icon"><i class="bx bx-home icon"></i></div></a>
+            <a href="/data"><div class="nav_icon"><i class="bx bx-data icon"></i></div></a>
+            <a href="/foli"><div class="nav_icon"><i class="bx bx-map icon"></i></div></a>
+        </div>
     </div>
     {% block content %}{% endblock %}
-    <hr>
 </body>
 </html>
