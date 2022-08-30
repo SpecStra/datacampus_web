@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="content">
+        <div class="content_search">
+            <div class="content_search_title">
+                 녹조 예측 모델 사용해보기
+            </div>
+            <div class="content_search_title_tiny">
+                 * 날짜와 지역을 입력하면 해당 날짜/지역의 유해남조류 세포 수(녹조 심각도)를 나타내는 지도를 보여줍니다.
+            </div>
+            <form class="content_search_form" method="post">
+                <div class="content_search_div">
+                    <input class="content_search_input" type="date" name="date">
+                    <select class="content_search_input" name="region">
+                        {% for region in regions %}
+                            <option value="{{ region }}">{{ region }}</option>
+                        {% endfor %}
+                    </select>
+                    <button class="content_search_btn">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

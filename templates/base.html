@@ -3,19 +3,19 @@
 <head>
     {% block header %}{% endblock %}
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>{{ title }} - DataCampus</title>
     <link rel="stylesheet" href="../static/base.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="nav">
         <div class="nav_container">
-            <h1 class="nav_quote">Hello, Sir.</h1>
+            <h1 class="nav_quote">Green Algae Prediction</h1>
         </div>
         <div class="nav_container">
             <a href="/"><div class="nav_icon"><i class="bx bx-home icon"></i></div></a>
-            <a href="/data"><div class="nav_icon"><i class="bx bx-data icon"></i></div></a>
-            <a href="/foli"><div class="nav_icon"><i class="bx bx-map icon"></i></div></a>
+            <a href="/search"><div class="nav_icon"><i class="bx bx-search icon"></i></div></a>
+            <a href="./map?source=han"><div class="nav_icon"><i class="bx bx-map icon"></i></div></a>
         </div>
     </div>
     {% block content %}{% endblock %}

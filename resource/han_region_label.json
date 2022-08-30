@@ -1,0 +1,126 @@
+[
+  {
+    "region": "강정고령보 다사",
+    "label": 0
+  },
+  {
+    "region": "강천보 강천",
+    "label": 1
+  },
+  {
+    "region": "광교지 취수탑",
+    "label": 2
+  },
+  {
+    "region": "구미보 선산",
+    "label": 3
+  },
+  {
+    "region": "낙단보 낙단",
+    "label": 4
+  },
+  {
+    "region": "낙동강 강정·고령",
+    "label": 5
+  },
+  {
+    "region": "낙동강 물금·매리",
+    "label": 6
+  },
+  {
+    "region": "낙동강 칠서",
+    "label": 7
+  },
+  {
+    "region": "낙동강 해평",
+    "label": 8
+  },
+  {
+    "region": "달성보 논공",
+    "label": 9
+  },
+  {
+    "region": "상주보 도남",
+    "label": 10
+  },
+  {
+    "region": "여주보 대신",
+    "label": 11
+  },
+  {
+    "region": "의암호 신연교",
+    "label": 12
+  },
+  {
+    "region": "이포보 이포",
+    "label": 13
+  },
+  {
+    "region": "진양호 내동",
+    "label": 14
+  },
+  {
+    "region": "창녕함안보 함안",
+    "label": 15
+  },
+  {
+    "region": "춘천호 용산취수장",
+    "label": 16
+  },
+  {
+    "region": "춘천호 춘성교 교각",
+    "label": 17
+  },
+  {
+    "region": "충주호 댐앞",
+    "label": 18
+  },
+  {
+    "region": "충주호 청풍교",
+    "label": 19
+  },
+  {
+    "region": "칠곡보 칠곡",
+    "label": 20
+  },
+  {
+    "region": "팔당호 댐앞",
+    "label": 21
+  },
+  {
+    "region": "팔당호 부용사앞",
+    "label": 22
+  },
+  {
+    "region": "팔당호 삼봉",
+    "label": 23
+  },
+  {
+    "region": "한강 강동대교",
+    "label": 24
+  },
+  {
+    "region": "한강 광진교",
+    "label": 25
+  },
+  {
+    "region": "한강 미사대교",
+    "label": 26
+  },
+  {
+    "region": "한강 이천",
+    "label": 27
+  },
+  {
+    "region": "한강 잠실철교",
+    "label": 28
+  },
+  {
+    "region": "합천창녕보 덕곡",
+    "label": 29
+  },
+  {
+    "region": "횡성호 취수탑",
+    "label": 30
+  }
+]

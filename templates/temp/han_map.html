@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1392e5773687b4f93db95f2ab72a6c9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c1392e5773687b4f93db95f2ab72a6c9" ></div>
+        
+</body>
+<script>    
+    
+            var map_c1392e5773687b4f93db95f2ab72a6c9 = L.map(
+                "map_c1392e5773687b4f93db95f2ab72a6c9",
+                {
+                    center: [37.422889, 127.281111],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2387d8c9ee42be1c004df077c1ef7cec = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+            var circle_ed8175249cc8a32c59107f93f02df55d = L.circle(
+                [37.3064311, 127.0279072],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 887, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_c130f353ca3720b873f4c8ce9d5e643e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece99a2706f530e0a5ab45a449cefb22 = $(`<div id="html_ece99a2706f530e0a5ab45a449cefb22" style="width: 100.0%; height: 100.0%;"><i>광교지 취수탑</i></div>`)[0];
+            popup_c130f353ca3720b873f4c8ce9d5e643e.setContent(html_ece99a2706f530e0a5ab45a449cefb22);
+        
+
+        circle_ed8175249cc8a32c59107f93f02df55d.bindPopup(popup_c130f353ca3720b873f4c8ce9d5e643e)
+        ;
+
+        
+    
+    
+            circle_ed8175249cc8a32c59107f93f02df55d.bindTooltip(
+                `<div>
+                     광교지 취수탑 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">8870<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d5858fff596dd518d743dd67d7fb3ebc = L.circle(
+                [37.3262865, 127.6039945],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 823, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_9c301fdb1d221014b1aec860de7f21f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_23e8dcabae2ed0fdefcdcfc77c0b0bb5 = $(`<div id="html_23e8dcabae2ed0fdefcdcfc77c0b0bb5" style="width: 100.0%; height: 100.0%;"><i>여주보 대신</i></div>`)[0];
+            popup_9c301fdb1d221014b1aec860de7f21f1.setContent(html_23e8dcabae2ed0fdefcdcfc77c0b0bb5);
+        
+
+        circle_d5858fff596dd518d743dd67d7fb3ebc.bindPopup(popup_9c301fdb1d221014b1aec860de7f21f1)
+        ;
+
+        
+    
+    
+            circle_d5858fff596dd518d743dd67d7fb3ebc.bindTooltip(
+                `<div>
+                     여주보 대신 <br> 현재상태 : High <br> 유해남조류 수 : <p style="color: red">8230<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_24177f9f9319181966904ae193b6fb7c = L.circle(
+                [37.8924083, 127.7131],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 646, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_dcc006d486781bff20ba9340db379f48 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80245f636eae64c788ac8407b3678efb = $(`<div id="html_80245f636eae64c788ac8407b3678efb" style="width: 100.0%; height: 100.0%;"><i>의암호 신연교</i></div>`)[0];
+            popup_dcc006d486781bff20ba9340db379f48.setContent(html_80245f636eae64c788ac8407b3678efb);
+        
+
+        circle_24177f9f9319181966904ae193b6fb7c.bindPopup(popup_dcc006d486781bff20ba9340db379f48)
+        ;
+
+        
+    
+    
+            circle_24177f9f9319181966904ae193b6fb7c.bindTooltip(
+                `<div>
+                     의암호 신연교 <br> 현재상태 : High <br> 유해남조류 수 : <p style="color: red">6460<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_74929c822491c1be81c38508d3f1a701 = L.circle(
+                [37.4047874, 127.5393444],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 758, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_b7e5ffc462d4e8fb8f1a9992935aefc7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a6102cec3c79ddd17ff4c3a981c05f77 = $(`<div id="html_a6102cec3c79ddd17ff4c3a981c05f77" style="width: 100.0%; height: 100.0%;"><i>이포보 이포</i></div>`)[0];
+            popup_b7e5ffc462d4e8fb8f1a9992935aefc7.setContent(html_a6102cec3c79ddd17ff4c3a981c05f77);
+        
+
+        circle_74929c822491c1be81c38508d3f1a701.bindPopup(popup_b7e5ffc462d4e8fb8f1a9992935aefc7)
+        ;
+
+        
+    
+    
+            circle_74929c822491c1be81c38508d3f1a701.bindTooltip(
+                `<div>
+                     이포보 이포 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">7580<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1f08349391f5ed5489a3c47a079d99ef = L.circle(
+                [37.9426364, 127.7068023],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 521, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_88770bc8a0183d05486af14ef89cab54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_145ffde28f2df554c1771f9ec5df2fe4 = $(`<div id="html_145ffde28f2df554c1771f9ec5df2fe4" style="width: 100.0%; height: 100.0%;"><i>춘천호 용산취수장</i></div>`)[0];
+            popup_88770bc8a0183d05486af14ef89cab54.setContent(html_145ffde28f2df554c1771f9ec5df2fe4);
+        
+
+        circle_1f08349391f5ed5489a3c47a079d99ef.bindPopup(popup_88770bc8a0183d05486af14ef89cab54)
+        ;
+
+        
+    
+    
+            circle_1f08349391f5ed5489a3c47a079d99ef.bindTooltip(
+                `<div>
+                     춘천호 용산취수장 <br> 현재상태 : Clean <br> 유해남조류 수 : <p style="color: blue">5210<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0a605d7fcc30dd21bbbf2822292a0f4c = L.circle(
+                [37.9688315, 127.6684182],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 535, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_21a6eed1e77f81f4314b9c73f34c106c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3cf9b076c6045929196827a422e6138d = $(`<div id="html_3cf9b076c6045929196827a422e6138d" style="width: 100.0%; height: 100.0%;"><i>춘천호 춘성교교각</i></div>`)[0];
+            popup_21a6eed1e77f81f4314b9c73f34c106c.setContent(html_3cf9b076c6045929196827a422e6138d);
+        
+
+        circle_0a605d7fcc30dd21bbbf2822292a0f4c.bindPopup(popup_21a6eed1e77f81f4314b9c73f34c106c)
+        ;
+
+        
+    
+    
+            circle_0a605d7fcc30dd21bbbf2822292a0f4c.bindTooltip(
+                `<div>
+                     춘천호 춘성교교각 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">5350<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_908d388fa8459fbb70cb57f8e3d4a38e = L.circle(
+                [36.9595174, 128.0666592],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1057, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_62291fd7ae85d137ea7e8577a1c80d89 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8b3c30d5b0181b0c27e86be846a09b2a = $(`<div id="html_8b3c30d5b0181b0c27e86be846a09b2a" style="width: 100.0%; height: 100.0%;"><i>충주호 댐앞</i></div>`)[0];
+            popup_62291fd7ae85d137ea7e8577a1c80d89.setContent(html_8b3c30d5b0181b0c27e86be846a09b2a);
+        
+
+        circle_908d388fa8459fbb70cb57f8e3d4a38e.bindPopup(popup_62291fd7ae85d137ea7e8577a1c80d89)
+        ;
+
+        
+    
+    
+            circle_908d388fa8459fbb70cb57f8e3d4a38e.bindTooltip(
+                `<div>
+                     충주호 댐앞 <br> 현재상태 : Moderate <br> 유해남조류 수 : <p style="color: green">10570<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_0cbc6b1bd2098f7d3ec9c45bb7c4a4ee = L.circle(
+                [37.0027087, 128.1800915],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1155, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_37b0fe8e310f1f13be1acf6b1db83556 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_763d7a6dd15a1e78e095f56878b7f04b = $(`<div id="html_763d7a6dd15a1e78e095f56878b7f04b" style="width: 100.0%; height: 100.0%;"><i>충주호 청풍교</i></div>`)[0];
+            popup_37b0fe8e310f1f13be1acf6b1db83556.setContent(html_763d7a6dd15a1e78e095f56878b7f04b);
+        
+
+        circle_0cbc6b1bd2098f7d3ec9c45bb7c4a4ee.bindPopup(popup_37b0fe8e310f1f13be1acf6b1db83556)
+        ;
+
+        
+    
+    
+            circle_0cbc6b1bd2098f7d3ec9c45bb7c4a4ee.bindTooltip(
+                `<div>
+                     충주호 청풍교 <br> 현재상태 : Moderate <br> 유해남조류 수 : <p style="color: green">11550<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_d447d29d1cab4fabe1e347bc0f0dd1dc = L.circle(
+                [37.514797, 127.3010229],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 542, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_23f3807ab3e87e4005e8f0d87bb9d410 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69ff62f11936372151c5b8bad003471b = $(`<div id="html_69ff62f11936372151c5b8bad003471b" style="width: 100.0%; height: 100.0%;"><i>팔당호 댐앞</i></div>`)[0];
+            popup_23f3807ab3e87e4005e8f0d87bb9d410.setContent(html_69ff62f11936372151c5b8bad003471b);
+        
+
+        circle_d447d29d1cab4fabe1e347bc0f0dd1dc.bindPopup(popup_23f3807ab3e87e4005e8f0d87bb9d410)
+        ;
+
+        
+    
+    
+            circle_d447d29d1cab4fabe1e347bc0f0dd1dc.bindTooltip(
+                `<div>
+                     팔당호 댐앞 <br> 현재상태 : Clean <br> 유해남조류 수 : <p style="color: blue">5420<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9cacce872eb8e829899ee87e412c1fe0 = L.circle(
+                [37.5352401, 127.3669881],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 997, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_03e9972be96b2a5e14c692a0c2529bcf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_647ab4fab451a2982710b161c979bd19 = $(`<div id="html_647ab4fab451a2982710b161c979bd19" style="width: 100.0%; height: 100.0%;"><i>팔당호 부용사앞</i></div>`)[0];
+            popup_03e9972be96b2a5e14c692a0c2529bcf.setContent(html_647ab4fab451a2982710b161c979bd19);
+        
+
+        circle_9cacce872eb8e829899ee87e412c1fe0.bindPopup(popup_03e9972be96b2a5e14c692a0c2529bcf)
+        ;
+
+        
+    
+    
+            circle_9cacce872eb8e829899ee87e412c1fe0.bindTooltip(
+                `<div>
+                     팔당호 부용사앞 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">9970<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f59fd07722451b84c6c11cb5652a5260 = L.circle(
+                [37.514797, 127.3010229],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1301, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_89313731018881ef173bf399fad66e4f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ccdeb8e169357f63bd1dd0e9ed4e5fa = $(`<div id="html_8ccdeb8e169357f63bd1dd0e9ed4e5fa" style="width: 100.0%; height: 100.0%;"><i>팔당호 삼봉</i></div>`)[0];
+            popup_89313731018881ef173bf399fad66e4f.setContent(html_8ccdeb8e169357f63bd1dd0e9ed4e5fa);
+        
+
+        circle_f59fd07722451b84c6c11cb5652a5260.bindPopup(popup_89313731018881ef173bf399fad66e4f)
+        ;
+
+        
+    
+    
+            circle_f59fd07722451b84c6c11cb5652a5260.bindTooltip(
+                `<div>
+                     팔당호 삼봉 <br> 현재상태 : High <br> 유해남조류 수 : <p style="color: red">13010<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a7579c14800e3586651796eeed1523f = L.circle(
+                [37.5780729, 127.161191],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 600, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_5923c7dc23efd8b0664f1c68c583b459 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d073b2e3e43164acb08a92b92a72a125 = $(`<div id="html_d073b2e3e43164acb08a92b92a72a125" style="width: 100.0%; height: 100.0%;"><i>한강 강동대교</i></div>`)[0];
+            popup_5923c7dc23efd8b0664f1c68c583b459.setContent(html_d073b2e3e43164acb08a92b92a72a125);
+        
+
+        circle_1a7579c14800e3586651796eeed1523f.bindPopup(popup_5923c7dc23efd8b0664f1c68c583b459)
+        ;
+
+        
+    
+    
+            circle_1a7579c14800e3586651796eeed1523f.bindTooltip(
+                `<div>
+                     한강 강동대교 <br> 현재상태 : Moderate <br> 유해남조류 수 : <p style="color: green">6000<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cf7bd9259128d085ca04797e511de71a = L.circle(
+                [37.544762, 127.113096],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1225, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_d6f502fc281408b341ea42810f37699b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51b54fc53da258b0bdd01dc77d6f000c = $(`<div id="html_51b54fc53da258b0bdd01dc77d6f000c" style="width: 100.0%; height: 100.0%;"><i>한강 광진교</i></div>`)[0];
+            popup_d6f502fc281408b341ea42810f37699b.setContent(html_51b54fc53da258b0bdd01dc77d6f000c);
+        
+
+        circle_cf7bd9259128d085ca04797e511de71a.bindPopup(popup_d6f502fc281408b341ea42810f37699b)
+        ;
+
+        
+    
+    
+            circle_cf7bd9259128d085ca04797e511de71a.bindTooltip(
+                `<div>
+                     한강 광진교 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">12250<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f173a63a653b5e731ab2ba3090501c8a = L.circle(
+                [37.5863237, 127.1984567],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1077, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_ed00ac25d1c7f1da1ebf4f49c2007f8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_06be4327a9b4fb2feee99c67681e92ba = $(`<div id="html_06be4327a9b4fb2feee99c67681e92ba" style="width: 100.0%; height: 100.0%;"><i>한강 미사대교</i></div>`)[0];
+            popup_ed00ac25d1c7f1da1ebf4f49c2007f8b.setContent(html_06be4327a9b4fb2feee99c67681e92ba);
+        
+
+        circle_f173a63a653b5e731ab2ba3090501c8a.bindPopup(popup_ed00ac25d1c7f1da1ebf4f49c2007f8b)
+        ;
+
+        
+    
+    
+            circle_f173a63a653b5e731ab2ba3090501c8a.bindTooltip(
+                `<div>
+                     한강 미사대교 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">10770<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7b437b3226b46cdcde965abfef3c2ad6 = L.circle(
+                [37.2951069, 127.488693],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1255, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_14a0e9cf1dee3480d1fdcef3199e4afd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c92ec1d802b8232f2898876914cceb8 = $(`<div id="html_3c92ec1d802b8232f2898876914cceb8" style="width: 100.0%; height: 100.0%;"><i>한강 이천</i></div>`)[0];
+            popup_14a0e9cf1dee3480d1fdcef3199e4afd.setContent(html_3c92ec1d802b8232f2898876914cceb8);
+        
+
+        circle_7b437b3226b46cdcde965abfef3c2ad6.bindPopup(popup_14a0e9cf1dee3480d1fdcef3199e4afd)
+        ;
+
+        
+    
+    
+            circle_7b437b3226b46cdcde965abfef3c2ad6.bindTooltip(
+                `<div>
+                     한강 이천 <br> 현재상태 : Clean <br> 유해남조류 수 : <p style="color: blue">12550<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_81736eae6cbbcf98fb035a78c3cc7155 = L.circle(
+                [37.5290693, 127.0984866],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1348, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_937a494ebea52d49011ffd779b7f9bdf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9579c5534069bd4fcb842051589d1809 = $(`<div id="html_9579c5534069bd4fcb842051589d1809" style="width: 100.0%; height: 100.0%;"><i>한강 잠실철교</i></div>`)[0];
+            popup_937a494ebea52d49011ffd779b7f9bdf.setContent(html_9579c5534069bd4fcb842051589d1809);
+        
+
+        circle_81736eae6cbbcf98fb035a78c3cc7155.bindPopup(popup_937a494ebea52d49011ffd779b7f9bdf)
+        ;
+
+        
+    
+    
+            circle_81736eae6cbbcf98fb035a78c3cc7155.bindTooltip(
+                `<div>
+                     한강 잠실철교 <br> 현재상태 : Moderate <br> 유해남조류 수 : <p style="color: green">13480<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1c58874d4d84848042af2dc6fc86dd94 = L.circle(
+                [37.5525, 128.0594444],
+                {"bubblingMouseEvents": true, "color": "darkgreen", "dashArray": null, "dashOffset": null, "fill": "darkgreen", "fillColor": "darkgreen", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1253, "stroke": true, "weight": 3}
+            ).addTo(map_c1392e5773687b4f93db95f2ab72a6c9);
+        
+    
+        var popup_1fb3c3459aeddb5e7aacfae95a22e376 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_808e4d31b144c71ad40f33a84bbecced = $(`<div id="html_808e4d31b144c71ad40f33a84bbecced" style="width: 100.0%; height: 100.0%;"><i>횡성호 취수탑</i></div>`)[0];
+            popup_1fb3c3459aeddb5e7aacfae95a22e376.setContent(html_808e4d31b144c71ad40f33a84bbecced);
+        
+
+        circle_1c58874d4d84848042af2dc6fc86dd94.bindPopup(popup_1fb3c3459aeddb5e7aacfae95a22e376)
+        ;
+
+        
+    
+    
+            circle_1c58874d4d84848042af2dc6fc86dd94.bindTooltip(
+                `<div>
+                     횡성호 취수탑 <br> 현재상태 : Considerable <br> 유해남조류 수 : <p style="color: darkgreen">12530<p>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

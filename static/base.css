@@ -2,11 +2,18 @@
 
 @import url("nav.css");
 @import url("content.css");
+@import url("folium.css");
+@import url("search.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 
 body{
     background-color: #130f14;
     color: #e9e9e9;
-    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.nav{
+    background-color: white;
+    color: rgb(169,205,52);
 }

@@ -1,11 +1,8 @@
-
-
 .nav{
     display: flex;
     position: sticky;
     justify-content: space-around;
     top: 0;
-    border-bottom: 2px solid mintcream;
     height: 70px;
 }
 
@@ -28,9 +25,16 @@
     font-family: 'Black Han Sans', sans-serif;
     font-size: 30px;
     font-weight: 600;
+    color: rgb(169,205,52);
 }
 
 .nav_icon{
     font-size: 36px;
     margin-left: 70px;
+    text-decoration: none;
+}
+
+body > div.nav > div:nth-child(2) > a > div > i{
+    text-decoration: none;
+    color: black;
 }

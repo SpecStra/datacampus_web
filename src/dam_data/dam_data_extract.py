@@ -26,67 +26,18 @@ for i in epoch :
 
 dam_code = [
     {
-        "name" : "영천댐",
-        "code" : "2012210"
+        "name" : "백제보",
+        "code" : "3012602"
     },
     {
-        "name" : "운문댐",
-        "code" : "2021210"
+        "name" : "세종보",
+        "code" : "3010601"
     },
     {
-        "name" : "밀양댐",
-        "code" : "2021110"
-    },
-    {
-        "name" : "합천댐",
-        "code" : "2015110"
-    },
-    {
-        "name" : "남강댐",
-        "code" : "2018110"
-    },
-    {
-        "name" : "평화의댐",
-        "code" : "1009710"
-    },
-    {
-        "name" : "화천댐",
-        "code" : "1010310"
-    },
-    {
-        "name" : "춘천댐",
-        "code" : "1010320"
-    },
-    {
-        "name" : "소양강댐",
-        "code" : "1012110"
-    },
-    {
-        "name" : "의암댐",
-        "code" : "1013310"
-    },
-    {
-        "name" : "청평댐",
-        "code" : "1015310"
-    },
-    {
-        "name" : "횡성댐",
-        "code" : "1006110"
-    },
-    {
-        "name" : "팔당댐",
-        "code" : "1017310"
-    },
-    {
-        "name" : "충주댐",
-        "code" : "1003110"
-    },
-    {
-        "name" : "괴산댐",
-        "code" : "1004310"
-    },
-]
-
+        "name" : "공주보",
+        "code" : "3012601"
+    }
+    ]
 
 epoch = range(1, 79)
 for c in dam_code :
@@ -162,4 +113,4 @@ for c in dam_code :
             "totdcwtrqy" : totdcwtrqy
         })
 
-        df.to_csv(f"./{name}_{code}_data.csv", encoding="ANSI", index=False)
+        df.to_csv(f"./download/{name}_{code}_data.csv", encoding="ANSI", index=False)

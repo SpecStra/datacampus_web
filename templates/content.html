@@ -2,63 +2,47 @@
 {% block content %}
 
     <div class="content">
-        <div class="content_top">
-            <!-- introduce, hr -->
-            <div class="content_top_quote">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+        <div class="content_topic">
+            <div class="content_top">
+                <!-- introduce, hr -->
+                <div class="content_top_quote">
+                    녹조(유해남조류 발생)현상이란?
+                </div>
+                <hr>
             </div>
-            <hr>
-        </div>
-        <div class="content_search">
-            <!-- search bar-form -->
-            <form class="content_search_form" method="post">
-                <input class="content_search_input" name="corr">
-                <!--
-                <button class="content_search_btn" type="submit"><i class="bx bx-search icon"></i></button>
-                -->
-            </form>
-        </div>
-        <div class="content_status">
-            <!-- maybe status? -->
-            <div class="content_status_container">
-                <div class="content_status_itemBox_1">
-                    Algal bloom Area
+            <div class="content_expl">
+                <div class="content_expl_quote">
+                    녹조는 남세균 등 식물플랑크톤의 대발생으로 물빛이 녹색으로 바뀌어 보이는 현상을 말한다. 수체의 부영양화, 특히 인의 과도한 유입으로 인하여 발생하며, 이로 인해 조류나 남세균의 수가 폭발적으로 증가하여 물 색깔을 변화시킨다. 이러한 녹조는 수중 산소를 고갈시켜 수중 생물들의 생존에 치명적으로 작용하며, 독소를 생성하여 수질을 오염시키는 원인이기도 하다.
+                    <br>
+                    이러한 피해는 단순히 하천에 미치는 영향만이 아니라, 물속의 조류를 제거하는 과정에서의 정수 처리비용 증가 및 수돗물 수질 악화와 같은 일상으로의 피해까지 확장될 수 있다.
                 </div>
-                <div class="content_status_itemBox_2">
-                    xx.xx km²
-                </div>
-            </div>
-            <div class="content_status_container">
-                <div class="content_status_itemBox_1">
-                    Algal bloom Area
-                </div>
-                <div class="content_status_itemBox_2">
-                    xx.xx km²
-                </div>
-            </div>
-            <div class="content_status_container">
-                <div class="content_status_itemBox_1">
-                    Algal bloom Area
-                </div>
-                <div class="content_status_itemBox_2">
-                    xx.xx km²
-                </div>
-            </div>
-            <div class="content_status_container">
-                <div class="content_status_itemBox_1">
-                    Algal bloom Area
-                </div>
-                <div class="content_status_itemBox_2">
-                    xx.xx km²
+                <div class="content_expl_href">
+                    <a style="text-decoration:none" href="./map?source=han">
+                        <div class="content_expl_href_btn">View Map</div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="content_img">
-            <div class="content_img_container">
-                <img src="../static/resource/test_img1.png">
+
+        <div class="content_middle">
+            <div class="content_news_container">
+                <div class="content_news_container_title">
+                    <i class="bx bx-info icon"></i>최근 녹조 관련 뉴스
+                    <hr style="color: #130f14">
+                </div>
+                <ul>
+                    {% for i in range(0, 5) %}
+                        <a style="text-decoration:none; color: #e9e9e9" href={{ news_link[i] }}>
+                            <li class="content_news_li">{{ news_tilte[i] }} ▶</li>
+                            <hr>
+                        </a>
+                    {% endfor %}
+                </ul>
             </div>
-            <div class="content_img_container">
-                <img src="../static/resource/test_img2.png">
+            <div class="content_graph_container">
+                <div class="content_img_container">
+                    <a href="./map?source=han"><img class="content_img" src="../static/resource/test_img1.png"></a>
+                </div>
             </div>
         </div>
     </div>
